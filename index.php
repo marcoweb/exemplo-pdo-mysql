@@ -1,17 +1,14 @@
 <?php
 require_once './vendor/autoload.php';
 
-//use ExemploPDOMySQL\MySQLConnection;
-use ExemploPDOMySQL\Repositories\GenerosRepository;
+use ExemploPDOMySQL\MySQLConnection;
 
-//$bd = new MySQLConnection(); //PDO('mysql:host=localhost;dbname=biblioteca', 'root', '');
+$bd = new MySQLConnection(); //PDO('mysql:host=localhost;dbname=biblioteca', 'root', '');
 
-//$comando = $bd->prepare('SELECT * FROM generos');
-//$comando->execute();
+$comando = $bd->prepare('SELECT * FROM generos');
+$comando->execute();
 
-$repo = new GenerosRepository();
-
-$generos = $repo->select();//$comando->fetchAll(PDO::FETCH_ASSOC);
+//$generos = $comando->fetchAll(PDO::FETCH_ASSOC);
 
 ?>
 
