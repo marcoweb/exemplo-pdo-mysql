@@ -6,5 +6,3 @@ class MySQLConnection extends \PDO {
         parent::__construct('mysql:host=localhost;dbname=biblioteca', 'root', '');
     }
 }
-
-
